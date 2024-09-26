@@ -12,6 +12,22 @@ printf("Your age is %d and your name is %s", age, name);
 }
 
 /*
+#include <stdio.h>
+
+int main() {
+    // Character example
+    char ch = 'A'; //Single character
+    printf("Character: %c\n", ch);
+
+    // String example
+    char str[] = "Hello"; // Collection of characters forming a word
+    printf("String: %s\n", str);
+
+    return 0;
+}
+*/
+
+/*
 When we are using string = character in scanf
  then we don't need to use & because  word.
 
