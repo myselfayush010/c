@@ -12,7 +12,7 @@ printf("Your age is %d and your name is %s", age, name);
 }
 
 /*
-When we using string = character in scanf
+When we are using string = character in scanf
  then we don't need to use & because  word.
 
 */
