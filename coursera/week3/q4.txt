@@ -1,0 +1,50 @@
+PracticeLab3_Question_4
+
+Write a C program that takes two positive numbers, a and b, as input from the user. If either of the numbers is less
+than or equal to zero, then terminate the program there itself. Use a for loop to print the value of a raised to the
+power b, that is, ab.
+
+Below are some test cases for your reference. You can use the C program file attached with this question as a template.
+The variables in this program are declared with unsigned long long int datatype because when performing power operation,
+the result can be more than the maximum limit of value that an int variable can store in C. 
+
+Testcase 1     Testcase 2      Testcase3
+Input - 2 3     Input - 3 2    Input - 3 4
+Output - 8      Output - 9     Output - 81
+
+
+### Explanation of the Code
+
+1. **Include Standard I/O Library**:
+   - `#include <stdio.h>`: This line includes the Standard Input Output library in C, which allows you to use functions like `printf` and `scanf`.
+
+2. **Main Function**:
+   - `int main()`: This is the main function where the execution of the program begins. It returns an integer value to the operating system upon completion.
+
+3. **Variable Declaration**:
+   - `unsigned long long int a, b, result = 1;`: This line declares three variables of type `unsigned long long int`. [`a`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fd%3A%2Fc%2Fc%2Fcoursera%2Fweek3%2Fq4.txt%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A2%2C%22character%22%3A6%7D%7D%5D%2C%22c8842c3d-63e2-431d-b00f-6dc916639aa1%22%5D "Go to definition") and [`b`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fd%3A%2Fc%2Fc%2Fcoursera%2Fweek3%2Fq4.txt%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A2%2C%22character%22%3A57%7D%7D%5D%2C%22c8842c3d-63e2-431d-b00f-6dc916639aa1%22%5D "Go to definition") will store the input numbers, and [`result`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fd%3A%2Fc%2Fc%2Fcoursera%2Fweek3%2Fq4.txt%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A8%2C%22character%22%3A4%7D%7D%5D%2C%22c8842c3d-63e2-431d-b00f-6dc916639aa1%22%5D "Go to definition") is initialized to 1 to store the result of `a^b`.
+
+4. **Input from User**:
+   - `printf("Enter two positive numbers (a and b): ");`: This line prints a message to the console asking the user to enter two positive numbers.
+   - `scanf("%llu %llu", &a, &b);`: This line reads two unsigned long long integers from the user and stores them in [`a`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fd%3A%2Fc%2Fc%2Fcoursera%2Fweek3%2Fq4.txt%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A2%2C%22character%22%3A6%7D%7D%5D%2C%22c8842c3d-63e2-431d-b00f-6dc916639aa1%22%5D "Go to definition") and [`b`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fd%3A%2Fc%2Fc%2Fcoursera%2Fweek3%2Fq4.txt%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A2%2C%22character%22%3A57%7D%7D%5D%2C%22c8842c3d-63e2-431d-b00f-6dc916639aa1%22%5D "Go to definition").
+
+5. **Input Validation**:
+   - `if (a <= 0 || b <= 0)`: This line checks if either [`a`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fd%3A%2Fc%2Fc%2Fcoursera%2Fweek3%2Fq4.txt%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A2%2C%22character%22%3A6%7D%7D%5D%2C%22c8842c3d-63e2-431d-b00f-6dc916639aa1%22%5D "Go to definition") or [`b`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fd%3A%2Fc%2Fc%2Fcoursera%2Fweek3%2Fq4.txt%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A2%2C%22character%22%3A57%7D%7D%5D%2C%22c8842c3d-63e2-431d-b00f-6dc916639aa1%22%5D "Go to definition") is less than or equal to zero.
+   - `printf("Both numbers must be positive.\n");`: If the condition is true, this line prints an error message.
+   - `return 0;`: This line terminates the program if the condition is true.
+
+6. **Power Calculation Using [`for`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fd%3A%2Fc%2Fc%2Fcoursera%2Fweek3%2Fq4.txt%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A3%2C%22character%22%3A70%7D%7D%5D%2C%22c8842c3d-63e2-431d-b00f-6dc916639aa1%22%5D "Go to definition") Loop**:
+   - `for (unsigned long long int i = 0; i < b; i++)`: This line initializes a loop counter `i` to 0 and runs the loop until `i` is less than [`b`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fd%3A%2Fc%2Fc%2Fcoursera%2Fweek3%2Fq4.txt%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A2%2C%22character%22%3A57%7D%7D%5D%2C%22c8842c3d-63e2-431d-b00f-6dc916639aa1%22%5D "Go to definition").
+   - `result *= a;`: This line multiplies [`result`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fd%3A%2Fc%2Fc%2Fcoursera%2Fweek3%2Fq4.txt%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A8%2C%22character%22%3A4%7D%7D%5D%2C%22c8842c3d-63e2-431d-b00f-6dc916639aa1%22%5D "Go to definition") by [`a`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fd%3A%2Fc%2Fc%2Fcoursera%2Fweek3%2Fq4.txt%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A2%2C%22character%22%3A6%7D%7D%5D%2C%22c8842c3d-63e2-431d-b00f-6dc916639aa1%22%5D "Go to definition") in each iteration, effectively calculating `a^b`.
+
+7. **Print the Result**:
+   - `printf("%llu^%llu = %llu\n", a, b, result);`: This line prints the result of `a^b` to the console.
+
+8. **End of Main Function**:
+   - `return 0;`: This line indicates that the program has executed successfully and returns 0 to the operating system.
+
+Summary
+Input Validation: Ensures both numbers are positive.
+Power Calculation: Uses a for loop to compute a^b.
+Data Type: Uses unsigned long long int to handle large results.
+Output: Prints the result of a^b.

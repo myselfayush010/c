@@ -1,0 +1,34 @@
+for loop
+- when you know how many time you have to executed
+- number of iteration known.
+1. initialization int i=0
+2. condition i < 20 
+3. increment i++
+
+for (initialization; condition; increment/decrement) {
+    // Code to be executed
+}
+
+while loop
+- when you know how many times you have to repeat.
+- number of iteration unknown
+
+#include <stdio.h>
+
+int main() {
+    int i = 0;                 initialize
+    while (i < 10) {           condition
+        printf("%d\n", i);
+        i++;                    iteration
+    }
+    return 0;
+}
+
+post - increment = i++  // Increases i by 1 after its current value is used
+pre - increment = ++i   // Increases i by 1 before its new value is used
+
+post - decrement = i--  // Decreases i by 1 after its current value is used
+pre - decrement = --i   // Decreases i by 1 before its new value is used
+
+
+

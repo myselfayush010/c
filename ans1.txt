@@ -1,0 +1,81 @@
+Question 1: Basic Understanding
+
+1.1 What is the initial value of the variable i in the provided code?
+Answer: 0
+Explanation: The initial value of i is the value assigned to it before the loop starts.
+ In the provided code, i is initialized to 0.
+
+1.2 What condition must be true for the while loop to continue executing?
+Answer: iteration condition must be true
+Explanation: The while loop continues to execute as long as the condition specified in the loop is true.
+ For example, if the condition is i < 10, the loop will keep running as long as i is less than 10.
+
+1.3 What will be the final value of i after the loop terminates?
+Answer: 0
+Explanation: 
+The final value of i after the loop terminates depends on the loop's condition and the operations performed inside the loop.
+ If the loop does not execute (because the initial condition is false), i remains 0.
+
+Question 2: Output Prediction
+2.1 What will be the output of the provided code?
+Answer: you have not provided any code
+Explanation: Without the actual code, it's impossible to predict the output.
+ The output depends on the specific operations and conditions in the code.
+
+2.2 How many times will the printf statement be executed?
+Answer: 1
+Explanation: The number of times the printf statement is executed
+ depends on the loop's condition and the operations inside the loop.
+ Without the actual code, we can only guess. If the loop runs once, printf will be executed once.
+
+Question 3: Modification
+3.1 How would you modify the code to print values from 10 to 20 instead of 15 to 29?
+Answer: Not provided
+Explanation: To modify the code to print values from 10 to 20,
+ you would initialize i to 10 and change the loop condition to i <= 20.
+
+3.2 How would you change the loop to decrement i from 30 to 15 instead of incrementing it?
+Answer: Not provided
+Explanation: To decrement i from 30 to 15,
+ you would initialize i to 30 and change the loop condition to i >= 15, and use i-- to decrement i in each iteration.
+
+Question 4: Edge Cases
+4.1 What happens if the initial value of i is set to 30?
+Answer: Not provided
+Explanation: If the initial value of i is set to 30 and the loop condition is i < 30, the loop will not execute
+ because the condition is false from the start.
+
+4.2 What happens if the initial value of i is set to a value greater than 30?
+Answer: Not provided
+Explanation: If the initial value of i is set to a value greater than 30 and the loop condition is i < 30,
+ the loop will not execute because the condition is false from the start.
+
+Question 5: Conceptual Questions
+5.1 Explain the difference between a while loop and a for loop.
+Answer: Not provided
+Explanation: A while loop continues to execute as long as its condition is true.
+ A for loop includes initialization, condition, and increment/decrement in a single line, making it more compact for certain use cases.
+
+5.2 What is an infinite loop, and how can it occur in a while loop?
+Answer: Not provided
+Explanation: An infinite loop occurs when the loop's condition is always true, causing the loop to execute indefinitely.
+ In a while loop, this can happen if the condition never becomes false.
+
+Question 6: Advanced Questions
+6.1 How would you modify the code to print only even numbers between 15 and 30?
+Answer: Not provided
+Explanation: To print only even numbers between 15 and 30, you would use a condition inside the loop to check if i is even (i % 2 == 0) and only print i if this condition is true.
+
+6.2 How can you use a while loop to sum all the numbers from 15 to 30 and print the result?
+Answer: Not provided
+Explanation: To sum all the numbers from 15 to 30, you would initialize a sum variable to 0, add i to the sum in each iteration, and print the sum after the loop terminates.
+Summary
+Initialization: Setting the starting value of the loop counter.
+Condition: Determines whether the loop should continue running.
+Body: Contains the code to be executed in each iteration.
+Increment/Decrement: Updates the loop counter to eventually terminate the loop.
+Edge Cases: Scenarios where the loop might not execute or behave differently.
+Conceptual Understanding: Differences between loop types and potential issues like infinite loops.
+Advanced Use Cases: Modifying loops for specific tasks like printing even numbers or summing values.
+
+

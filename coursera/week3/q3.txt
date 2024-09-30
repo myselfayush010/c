@@ -1,0 +1,33 @@
+PracticeLab3_Question3
+
+1. The C program in the file attached to this question intends to print an alternating pattern of 1’s and 0’s, based on the
+number of rows entered by the user as follows:
+
+101010……
+010101……
+…………….
+…………….
+
+where the number entered by the user is the number of rows and columns to be printed in the pattern. Fill in the blanks
+A, B, C, and D with appropriate expressions so that the program works correctly. Consider the following test cases for
+your reference.
+
+Testcase 1    Testcase 2
+Input - 2      Input - 5
+Output - 10    Output - 10101
+         01             01010
+                        10101
+                        01010
+                        10101
+
+
+2. Now, change what you entered in the blanks A, B, C, and D, so that the program prints a triangle of alternating 0’s
+and 1’s instead of a square. Consider the following test cases for your reference.
+
+Testcase 1       Testcase 2
+Input - 3         Input - 5
+Output - 1        Output -1         
+         01               01
+         101              101
+                          0101
+                          10101
