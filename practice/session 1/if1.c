@@ -1,8 +1,9 @@
 #include <stdio.h>
+#include <string.h>
 int main ()  {
 printf("hello, how are you choose good or bad ");
 char a[100];
-scanf("%s",&a);
+scanf("%s", a);
 if (strcmp(a, "good") == 0) {  // strcmp means compare
 
 // why zero i wrote because i want equal to zero as good.
