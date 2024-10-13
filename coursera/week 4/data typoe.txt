@@ -1,0 +1,32 @@
+### Data Types, Storage Classes, and Scopes
+
+1. **Global Variable:**
+   - **Variable:** `i`
+   - **Data Type:** `double`
+   - **Storage Class:** `extern` (default for global variables)
+   - **Scope:** Global (accessible throughout the file)
+
+2. **Function Parameter:**
+   - **Variable:** `i` (in `f1`)
+   - **Data Type:** `int`
+   - **Storage Class:** `auto` (default for function parameters)
+   - **Scope:** Local to the function `f1`
+
+3. **Local Variables in `main`:**
+   - **Variable:** `j`
+   - **Data Type:** `int`
+   - **Storage Class:** `auto` (default for local variables)
+   - **Scope:** Local to the `main` function
+
+4. **Loop Variable in `main`:**
+   - **Variable:** `k` (in `for` loop)
+   - **Data Type:** `int`
+   - **Storage Class:** `auto` (default for local variables)
+   - **Scope:** Local to the `for` loop block
+
+5. **Inner Block Variable in `main`:**
+   - **Variable:** `k` (inside the inner block)
+   - **Data Type:** `int`
+   - **Storage Class:** `auto` (default for local variables)
+   - **Scope:** Local to the inner block
+
